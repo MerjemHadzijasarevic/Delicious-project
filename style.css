@@ -1,0 +1,123 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+.navtop,
+.navbottom {
+  width: 70%;
+  margin: auto;
+}
+.navbottom {
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0px;
+  z-index: 10;
+}
+.navicon {
+  margin: 10px 15px 10px 0px;
+}
+.links > li,
+.navicon > p,
+.navbottom > h1,
+.button {
+  display: inline-block;
+}
+.links > li,
+.navicon > p,
+.navbottom > h1,
+.button,
+.text-over {
+  color: white;
+}
+.navicon > p {
+  padding-left: 5px;
+  font-size: 13px;
+}
+ul {
+  list-style-type: none;
+}
+.links > li {
+  padding: 0px 10px;
+  font-size: 17px;
+}
+.links > li:first-child,
+.links > li:hover,
+.navicon {
+  color: darkgoldenrod;
+}
+.deepdrop,
+.deepdrop2 {
+  padding: 10px 10px;
+  width: 160px;
+  background-color: white;
+  display: none;
+  position: absolute;
+  border-radius: 10px;
+  box-shadow: 1px 2px 7px rgb(112, 112, 112);
+}
+.deepdrop {
+  height: 200px;
+  top: 4vh;
+  animation: dropanim 0.2s ease-in;
+}
+.deepdrop > li,
+.deepdrop2 > li {
+  padding: 10px 15px;
+}
+.deepdrop2 {
+  top: 5vh;
+  left: 180px;
+  animation: dropanim2 0.2s ease-in;
+}
+.dropdown:hover .deepdrop,
+.deepdrop:hover .deepdrop2 {
+  display: block;
+}
+.button {
+  background-color: darkgoldenrod;
+  padding: 10px 15px;
+  border-radius: 20px;
+  height: 17px;
+  width: 90px;
+}
+.button:hover {
+  background-color: rgb(133, 98, 10);
+}
+.links > li:hover,
+.button:hover {
+  transition: 0.2s all ease-in;
+}
+section {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.first {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.596), rgba(0, 0, 0, 0.288)),
+    url("../../Desktop/3rd\ Project\ \(Delicious\)/pictures/2.jpg");
+  background-repeat: no-repeat;
+}
+.text-over {
+  width: 60%;
+}
+
+@keyframes dropanim {
+  from {
+    top: 70px;
+  }
+  to {
+    top: 5vh;
+  }
+}
+@keyframes dropanim2 {
+  from {
+    left: 160px;
+  }
+  to {
+    left: 180px;
+  }
+}
